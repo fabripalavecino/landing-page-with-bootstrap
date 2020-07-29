@@ -11,6 +11,9 @@
     <script src="https://kit.fontawesome.com/b46fae7a09.js" crossorigin="anonymous"></script>
      <!-- Scroll Reveal Js-->
      <script src="https://unpkg.com/scrollreveal"></script>
+     <script>
+         ScrollReveal.debug = true;
+     </script>
 </head>
 
 <body>
@@ -247,8 +250,7 @@
     <section class="team text-center" id="team">
         <div class="container p-5">
             <h1 class="text-white">Team</h1>
-            <p class="text-white">Lorem, em sed, eum ullam harum eius impedit nulla commodi corrupti maiores soluta
-                iste. Voluptatum aliquam reprehenderit optio.</p>
+            <p class="text-white">Sic Mundus Creatus Est</p>
                 <div class="row">
                     <!--Member-->
                     <div class="col-lg-3">
@@ -371,21 +373,21 @@
                             <div class="input-group-prepend">
                                 <i class="input-group-text fas fa-user"></i>
                             </div>
-                            <input type="text" class="form-control" id="" placeholder="Name">
+                            <input type="text" class="form-control" placeholder="Name">
 
                         </div>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                 <i class="input-group-text fas fa-envelope"></i>
                             </div>
-                            <input type="email" class="form-control" id="" placeholder="Email">
+                            <input type="email" class="form-control" placeholder="Email">
 
                         </div>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                 <i class="input-group-text fas fa-comment-dots"></i>
                             </div>
-                            <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Write Your Message"></textarea>
+                            <textarea  cols="30" rows="10" class="form-control" placeholder="Write Your Message"></textarea>
                         </div>
                         <button class="btn btn-lg btn-block btn-primary">
                             Send Your Message
@@ -419,6 +421,7 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
     </script>
     <!--Script-->
+    
     <script>
         window.sr = ScrollReveal();
 
@@ -454,9 +457,15 @@
 
         sr.reveal('#contact', {
             duration: 2000,
-            distance: '300px',
+            distance: '600px',
             origin: 'right'
         });
+        sr.reveal('footer', {
+            duration: 2000,
+            distance: '200px',
+            origin: 'bottom'
+        });
+
 
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {

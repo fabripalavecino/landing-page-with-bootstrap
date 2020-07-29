@@ -3,6 +3,12 @@
     height: 100%;
 }
 
+
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 .navbar{
     box-shadow: 2px 2px 5px #000;
     opacity: .9;
