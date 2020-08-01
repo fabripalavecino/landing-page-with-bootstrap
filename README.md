@@ -1,5 +1,7 @@
 # landing-page-with-bootstrap
 
+![](./screenshot.png)
+
 ## Deployment
 
 ### See the project go to:
